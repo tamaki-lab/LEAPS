@@ -5,6 +5,7 @@
 ## Visualization
 
 Use `visualize.py` to visualize the selected patches by LEAPS.
+If you want to know how to use LEAPS solely, you should check `visualize.py`.
 
 <img src="https://github.com/user-attachments/assets/06656691-259f-4e08-be3b-dfcd96d0b036" width="700">
 
@@ -20,7 +21,8 @@ python visualize.py \
 
 ## Inference
 
-Use `inference.py` to perform inference with LEAPS.
+Use `inference.py`to perform inference.
+In this file, LEAPS is integrated to pretrained video model (base model) for video recognition inference.
 
 - `-m` : choice from `leaps_videomae` and `leaps_vivit`
 - `-cls_model` : the pretrained classification model (base model) from huggingface, e.g., `MCG-NJU/videomae-base-finetuned-kinetics`
