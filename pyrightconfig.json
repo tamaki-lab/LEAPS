@@ -1,0 +1,15 @@
+{
+    "exclude": [
+        "comet_logs/**",
+        ".hypothesis",
+        ".pytest_cache",
+        "data/**",
+        ".git/",
+        "sandbox/**.mp4",
+        "log/",
+        "submodule/**",
+        "pth/**",
+        ".venv/",
+        ".venv1/",
+    ]
+}

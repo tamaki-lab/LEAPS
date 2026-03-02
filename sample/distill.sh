@@ -1,0 +1,10 @@
+python distill.py \
+    --teacher_model MCG-NJU/videomae-large \
+    -s_hdim 128 \
+    -s_fdim 512 \
+    -s_layer 6 \
+    -s_head 4 \
+    -fs 16 \
+    --clips_per_video 1 \
+    -td data/wds/k400/k400_train_allframe \
+    -vd data/wds/k400/wds_k400_val_allframe \

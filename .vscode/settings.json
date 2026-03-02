@@ -1,0 +1,52 @@
+{
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "[python]": {
+        // "editor.defaultFormatter": "ms-python.black-formatter",
+        // "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            // "source.organizeImports": "never",
+            "source.fixAll": "explicit",
+        },
+    },
+    "ruff.lineLength": 120, // Ruff拡張の設定。RustネイティブLSで有効。 [oai_citation:2‡GitHub](https://github.com/astral-sh/ruff-vscode)
+    "ruff.enable": true,
+    "pylint.enabled": false,
+    "flake8.enabled": false, //[oai_citation:3‡Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-python.flake8)
+    "jupyter.debugJustMyCode": false,
+    "editor.renderWhitespace": "boundary",
+    "trailing-spaces.trimOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.rulers": [
+        80,
+        88
+    ],
+    "extensions.closeExtensionDetailsOnViewChange": true,
+    "extensions.ignoreRecommendations": false,
+    "notebook.lineNumbers": "on",
+    //
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "markdownlint.config": {
+        "default": true,
+        "MD033": false
+    },
+    "markdown.extension.tableFormatter.normalizeIndentation": true,
+    //
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "python.testing.pytestArgs": [
+        "test"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+}

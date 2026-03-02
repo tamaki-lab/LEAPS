@@ -1,0 +1,56 @@
+# ruff.toml
+# Ruff (>= 0.6)
+
+# ----------------------------
+# Top-level
+# ----------------------------
+line-length = 120
+target-version = "py310"
+fix = true
+force-exclude = true
+
+
+exclude = [
+  ".venv",
+  ".venv1",
+  "dist",
+  "build",
+  "__pycache__",
+  ".git",
+  ".hypothesis",
+  ".pytest_cache",
+  "comet_logs",
+  "data",
+  "log",
+  "submodule",
+  "sandbox/**/*.mp4",
+]
+
+# ----------------------------
+# Linter
+# ----------------------------
+[lint]
+select = [
+  "F",     # pyflakes
+  "E",     # pycodestyle Errors
+  "W",     # pycodestyle Warnings
+  "I",     # isort
+  "UP",    # pyupgrade
+  "B",     # flake8-bugbear
+  "C90",   # mccabe
+]
+#
+ignore = [
+  "E501",
+]
+
+#
+[lint.per-file-ignores]
+"tests/**/*.py" = ["S101", "D", "B018"]
+"scripts/*.py"  = ["E402"]
+
+[lint.flake8-type-checking]
+exempt-modules = ["cv2"]
+# quote-annotations = true
+# runtime-evaluated-base-classes = ["pydantic.BaseModel", "sqlalchemy.orm.DeclarativeBase"]
+# strict = true

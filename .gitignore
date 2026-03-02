@@ -1,0 +1,11 @@
+__pycache__/
+log/
+.hypothesis/
+hub/
+.mypy_cache/
+.pytest_cache/
+data/**
+!data/README.md
+*.mp4
+.venv/
+lightning_logs/

@@ -1,0 +1,47 @@
+## general
+# boto3
+jupyter
+matplotlib
+numpy
+pandas
+
+scikit-image
+scikit-learn
+scipy
+easydict
+addict
+yacs
+tqdm
+rich
+
+webdataset
+deepspeed
+tensorboard
+tensorboardX
+
+mypy
+bandit
+
+## pytorch
+torch==2.8.0
+torchvision==0.23.0
+torchaudio==2.8.0
+# torchdata>=0.6
+# torchtext
+git+https://github.com/facebookresearch/pytorchvideo.git
+lightning==2.4.0
+torchinfo>=1.7.2
+torchmetrics>=0.11
+pytorch-metric-learning>=2.0
+# torch_tb_profiler>=0.4
+
+## huggingface
+huggingface_hub[cli,torch]==0.24.7
+accelerate>=0.17
+datasets[vision,audio]==3.0.0
+evaluate>=0.4
+transformers==4.44.2
+opencv-python-headless==4.12.0.88
+kornia
+
+einops==0.7.0
