@@ -6,6 +6,8 @@
 
 Use `visualize.py` to visualize the selected patches by LEAPS.
 
+<img src="https://github.com/user-attachments/assets/06656691-259f-4e08-be3b-dfcd96d0b036" width="700">
+
 - `--visualize_videos_src` : the directory containing the source videos for visualization
 - `--visualize_videos_dest` : the directory where the visualized videos will be saved
 
